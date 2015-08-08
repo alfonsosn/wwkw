@@ -1,0 +1,63 @@
+// @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Patua+One);
+@import url(http://fonts.googleapis.com/css?family=Opens+Sans);
+
+
+#home {
+  .header {
+    width: 630px;
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    font-family: 'Patua One', serif;
+    font-size: 60px;
+  }
+  
+  .home-button{
+  cursor: pointer;
+    position: absolute;
+    border-radius: 25px;
+    margin-top: 30vh;
+    margin-left: 15%;
+    width: 200px;
+    height: 50px;
+    border-style: solid;
+    transition: 0.2s ease-in-out;
+    p {
+      font-family: Open Sans;
+      transition: 0.15s ease-in-out;
+      margin-top: 10px;
+      text-align: center;
+      color: black;
+      .glyphicon{
+        color:white;
+      }
+    } 
+    &:hover{
+      border-color: white;
+      background-color: black;
+    } 
+    &:hover > p {
+      font-size: 15px;
+      color: white;
+    }
+  }
+}
+
+#bg {
+  position: fixed; 
+  top: -5%; 
+  left: 0%; 
+  width: 200%; 
+  height: 200%;
+}
+
+#bg img {
+  min-width: 50%;
+  min-height: 50%; 
+  max-width: 10%;
+  max-height: 130vh;
+  z-index: 0;
+}
