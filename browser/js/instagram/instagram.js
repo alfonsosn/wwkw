@@ -22,10 +22,6 @@ app.controller('InstagramCtrl', ['$scope', 'Instagram',
 			hash: 'TBT'
 		};
 
-
-
-
-
 		var instagramSuccess = function(scope, res) {
 			if (res.meta.code !== 200) {
 				scope.error = res.meta.error_type + ' | ' + res.meta.error_message;
