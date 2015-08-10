@@ -1,5 +1,13 @@
 <section id="choosing">
 	<div id="bg-choosing">
-		<img src="images/kanye-gray-on-white.jpg"/>
+		<img src="images/south-park-s13e05c07-breaded-and-genius-16x9.jpg"/>
 	</div>
+
+	<div class="hashtag-box" ng-repeat = "insta in Images">
+		<p>#{{insta.hash}}</p>
+		<a ng-href="{{insta.link}}">
+			<img src="{{insta.img}}" />
+		</a>
+	</div>
+
 </section>

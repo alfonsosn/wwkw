@@ -14,7 +14,6 @@ app.factory('Instagram', ['$http',
                     }
                 };
                 return $http.jsonp(url, config)
-
             }
         }
     }
