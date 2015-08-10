@@ -1,10 +1,10 @@
-app.factory('Instagram', ['$http',
+app.factory('Hashtag', ['$http',
     function($http) {
         var base = "https://api.instagram.com/v1";
     var clientId = '864a4203f3764244a8378dd6a2443b87'
         return {
-            'get': function(count, hashtag) {
-                var request = '/tags/' + hashtag + '/media/recent';
+            getHashTags: function(count, userID) {
+                var request = '/users/' + userID + '/media/recent';
                 var url = base + request;
                 var config = {
                     'params': {

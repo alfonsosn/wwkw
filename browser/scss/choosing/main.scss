@@ -1,13 +1,46 @@
-#bg-choosing {
-  position: fixed; 
-  // width: 200%; 
-  // height: 200%;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.hashtag-box{
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  margin-top: 25%;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 210px;
+  height: 210px;
+  position: relative;
+  float: left;
+  text-align: center;
+  color: white;
+  p {
+    color: #404040;
+    font-family: 'Open Sans', sans;
+    font-size: 20px;
+  }
+  &:hover{
+      width: 225px;
+      height: 225px;
+    } 
 }
 
+#bg-choosing {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
 #bg-choosing img {
-  // min-width: 50%;
-  // min-height: 50%; 
-  // max-width: 10%;
-  // max-height: 130vh;
   z-index: 0;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  transition: 0.5s ease-in-out;
+  -webkit-filter: blur(5px);
 }
